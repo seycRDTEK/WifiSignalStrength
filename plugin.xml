@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+	id="cordova-plugin-Wifi-Signal-Strength"
+	version="0.6.1">
+
+	<name>WifiSignalStrength</name>
+	<description>Wifi Signal Strength Plugin</description>
+	<license>EYC</license>
+	<keywords>wifi,signal,strength</keywords>
+
+	<js-module src="www/signalStrength.js">
+		<clobbers target="plugins.signalStrength" />
+	</js-module>
+
+
+	<!-- android -->
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="WifiSignalStrength" >
+				<param name="android-package" value="com.eyc.plugins.WifiSignalStrength"/>
+			</feature>
+		</config-file>
+
+		<source-file src="src/android/WifiSignalStrength.java" target-dir="src/com/eyc/plugins/WifiSignalStrength" />
+	</platform>
+</plugin>
