@@ -22,6 +22,6 @@
 			</feature>
 		</config-file>
 
-		<source-file src="src/android/WifiSignalStrength.java" target-dir="src/com/eyc/plugins/WifiSignalStrength" />
+		<source-file src="src/android/WifiSignalStrength.java" target-dir="src/com/eyc/plugins" />
 	</platform>
 </plugin>
